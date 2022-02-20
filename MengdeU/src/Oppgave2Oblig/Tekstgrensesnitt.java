@@ -112,7 +112,6 @@ public class Tekstgrensesnitt {
 				arkiv.sorter();
 				Medlem[] medtab = arkiv.getDatakontakt();
 				for (int i = 0; i < medtab.length; i++) {
-					System.out.println("ute");
 					if (!medtab[i].equals(null)) {
 						if (medtab[i].getStatusIndeks() != -1 && !ind.contains(i)) {
 							temp += (medtab[i].getNavn() + " og " + medtab[medtab[i].getStatusIndeks()].getNavn()+"     "+medtab[i].hobString(medtab[i].getHobbyer())+"\n");
